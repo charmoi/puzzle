@@ -428,182 +428,26 @@ int main()
 		return true;
 		});
 	
+	int i;
+	for (i = 0; i < num_piece; i++)
+	{
+		piece[i].piece->setOnMouseCallback([&, i](ObjectPtr object, int x, int y, MouseAction action)->bool {
+			clickMove(piece[i], piece[empty_piece], one_line);
+			CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
 
-	piece[0].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[0], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
+			return true;
+			});
+	}
 
-		return true;
-		});
+	for (i = 0; i < num_piece2; i++)
+	{
+		piece2[i].piece->setOnMouseCallback([&, i](ObjectPtr object, int x, int y, MouseAction action)->bool {
+			clickMove(piece2[i], piece2[empty_piece2], one_line2);
+			CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
 
-	piece[1].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[1], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[2].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[2], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[3].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[3], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[4].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[4], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[5].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[5], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[6].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[6], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[7].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[7], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[8].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[8], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[9].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[9], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[10].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[10], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[11].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[11], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[12].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[12], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[13].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[13], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[14].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[14], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-	piece[15].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[15], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
-
-	piece2[0].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[0], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[1].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[1], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[2].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[2], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[3].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[3], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[4].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[4], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[5].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[5], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[6].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[6], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[7].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[7], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
-
-	piece2[8].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece2[8], piece2[empty_piece2], one_line2);
-		CheckPuzzle(piece2, num_piece2, timer, completePuzzle2, shuffle2, start_time, record2, recordT);
-
-		return true;
-		});
+			return true;
+			});
+	}
 
 
 	timer->setOnTimerCallback([&](TimerPtr timer)->bool {
