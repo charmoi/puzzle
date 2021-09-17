@@ -436,13 +436,6 @@ int main()
 		return true;
 		});
 
-	piece[0].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
-		clickMove(piece[0], piece[empty_piece], one_line);
-		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
-
-		return true;
-		});
-
 	piece[1].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
 		clickMove(piece[1], piece[empty_piece], one_line);
 		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
