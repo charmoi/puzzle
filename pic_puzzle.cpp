@@ -1,4 +1,4 @@
-#include <bangtal>
+ï»¿#include <bangtal>
 #include <time.h>
 using namespace bangtal;
 
@@ -167,7 +167,7 @@ void CheckPuzzle(Piece* piece, int num_piece, TimerPtr& timer, ObjectPtr& comple
 
 	std::string min_s = std::to_string(min);
 	std::string sec_s = std::to_string(sec);
-	record = "¼Ò¿ä ½Ã°£: " + min_s + "ºÐ " + sec_s + "ÃÊ";
+	record = "ì†Œìš” ì‹œê°„: " + min_s + "ë¶„ " + sec_s + "ì´ˆ";
 
 	return;
 }
@@ -178,10 +178,10 @@ int main()
 	setGameOption(GameOption::GAME_OPTION_INVENTORY_BUTTON, false);
 	setGameOption(GameOption::GAME_OPTION_MESSAGE_BOX_BUTTON, false);
 
-	auto front = Scene::create("½ÃÀÛ", "Images/½ÃÀÛÈ­¸é.png");
-	auto home = Scene::create("°ÔÀÓ ¼±ÅÃ", "Images/È¨È­¸é.png");
-	auto scene = Scene::create("4 X 4", "Images/Â¯±¸ºó¹è°æ.jpg");
-	auto scene2 = Scene::create("3 X 3", "Images/Â¯±¸¾ß±¸ºó¹è°æ.jpg");
+	auto front = Scene::create("ì‹œìž‘", "Images/ì‹œìž‘í™”ë©´.png");
+	auto home = Scene::create("ê²Œìž„ ì„ íƒ", "Images/í™ˆí™”ë©´.png");
+	auto scene = Scene::create("4 X 4", "Images/ì§±êµ¬ë¹ˆë°°ê²½.jpg");
+	auto scene2 = Scene::create("3 X 3", "Images/ì§±êµ¬ì•¼êµ¬ë¹ˆë°°ê²½.jpg");
 
 	const int one_line = 4;
 	const int num_piece = one_line * one_line;
@@ -200,45 +200,45 @@ int main()
 	const double playtime2 = 210.0;
 
 	Piece piece[16] = {
-		{"Images/Â¯±¸1.png", 0, scene, piece1_posX, piece1_posY},
-		{"Images/Â¯±¸2.png", 1, scene, piece1_posX + piece_size, piece1_posY},
-		{"Images/Â¯±¸3.png", 2, scene, piece1_posX + piece_size * 2, piece1_posY},
-		{"Images/Â¯±¸4.png", 3, scene, piece1_posX + piece_size * 3, piece1_posY},
-		{"Images/Â¯±¸5.png", 4, scene, piece1_posX, piece1_posY - piece_size},
-		{"Images/Â¯±¸6.png", 5, scene, piece1_posX + piece_size, piece1_posY - piece_size},
-		{"Images/Â¯±¸7.png", 6, scene, piece1_posX + piece_size * 2, piece1_posY - piece_size},
-		{"Images/Â¯±¸8.png", 7, scene, piece1_posX + piece_size * 3, piece1_posY - piece_size},
-		{"Images/Â¯±¸9.png", 8, scene, piece1_posX, piece1_posY - piece_size * 2},
-		{"Images/Â¯±¸10.png", 9, scene, piece1_posX + piece_size, piece1_posY - piece_size * 2},
-		{"Images/Â¯±¸11.png", 10, scene, piece1_posX + piece_size * 2, piece1_posY - piece_size * 2},
-		{"Images/Â¯±¸12.png", 11, scene, piece1_posX + piece_size * 3, piece1_posY - piece_size * 2},
-		{"Images/Â¯±¸13.png", 12, scene, piece1_posX, piece1_posY - piece_size * 3},
-		{"Images/Â¯±¸14.png", 13, scene, piece1_posX + piece_size, piece1_posY - piece_size * 3},
-		{"Images/Â¯±¸15.png", 14, scene, piece1_posX + piece_size * 2, piece1_posY - piece_size * 3},
-		{"Images/Â¯±¸16.png", 15, scene, piece1_posX + piece_size * 3, piece1_posY - piece_size * 3},
+		{"Images/ì§±êµ¬1.png", 0, scene, piece1_posX, piece1_posY},
+		{"Images/ì§±êµ¬2.png", 1, scene, piece1_posX + piece_size, piece1_posY},
+		{"Images/ì§±êµ¬3.png", 2, scene, piece1_posX + piece_size * 2, piece1_posY},
+		{"Images/ì§±êµ¬4.png", 3, scene, piece1_posX + piece_size * 3, piece1_posY},
+		{"Images/ì§±êµ¬5.png", 4, scene, piece1_posX, piece1_posY - piece_size},
+		{"Images/ì§±êµ¬6.png", 5, scene, piece1_posX + piece_size, piece1_posY - piece_size},
+		{"Images/ì§±êµ¬7.png", 6, scene, piece1_posX + piece_size * 2, piece1_posY - piece_size},
+		{"Images/ì§±êµ¬8.png", 7, scene, piece1_posX + piece_size * 3, piece1_posY - piece_size},
+		{"Images/ì§±êµ¬9.png", 8, scene, piece1_posX, piece1_posY - piece_size * 2},
+		{"Images/ì§±êµ¬10.png", 9, scene, piece1_posX + piece_size, piece1_posY - piece_size * 2},
+		{"Images/ì§±êµ¬11.png", 10, scene, piece1_posX + piece_size * 2, piece1_posY - piece_size * 2},
+		{"Images/ì§±êµ¬12.png", 11, scene, piece1_posX + piece_size * 3, piece1_posY - piece_size * 2},
+		{"Images/ì§±êµ¬13.png", 12, scene, piece1_posX, piece1_posY - piece_size * 3},
+		{"Images/ì§±êµ¬14.png", 13, scene, piece1_posX + piece_size, piece1_posY - piece_size * 3},
+		{"Images/ì§±êµ¬15.png", 14, scene, piece1_posX + piece_size * 2, piece1_posY - piece_size * 3},
+		{"Images/ì§±êµ¬16.png", 15, scene, piece1_posX + piece_size * 3, piece1_posY - piece_size * 3},
 	};
 
 	Piece piece2[9] = {
-		{"Images/Â¯±¸¾ß±¸1.png", 0, scene2, piece1_posX2, piece1_posY2},
-		{"Images/Â¯±¸¾ß±¸2.png", 1, scene2, piece1_posX2 + piece_size2, piece1_posY2},
-		{"Images/Â¯±¸¾ß±¸3.png", 2, scene2, piece1_posX2 + piece_size2 * 2, piece1_posY2},
-		{"Images/Â¯±¸¾ß±¸4.png", 3, scene2, piece1_posX2, piece1_posY2 - piece_size2},
-		{"Images/Â¯±¸¾ß±¸5.png", 4, scene2, piece1_posX2 + piece_size2, piece1_posY2 - piece_size2},
-		{"Images/Â¯±¸¾ß±¸6.png", 5, scene2, piece1_posX2 + piece_size2 * 2, piece1_posY2 - piece_size2},
-		{"Images/Â¯±¸¾ß±¸7.png", 6, scene2, piece1_posX2, piece1_posY2 - piece_size2 * 2},
-		{"Images/Â¯±¸¾ß±¸8.png", 7, scene2, piece1_posX2 + piece_size2, piece1_posY2 - piece_size2 * 2},
-		{"Images/Â¯±¸¾ß±¸9.png", 8, scene2, piece1_posX2 + piece_size2 * 2, piece1_posY2 - piece_size2 * 2},
+		{"Images/ì§±êµ¬ì•¼êµ¬1.png", 0, scene2, piece1_posX2, piece1_posY2},
+		{"Images/ì§±êµ¬ì•¼êµ¬2.png", 1, scene2, piece1_posX2 + piece_size2, piece1_posY2},
+		{"Images/ì§±êµ¬ì•¼êµ¬3.png", 2, scene2, piece1_posX2 + piece_size2 * 2, piece1_posY2},
+		{"Images/ì§±êµ¬ì•¼êµ¬4.png", 3, scene2, piece1_posX2, piece1_posY2 - piece_size2},
+		{"Images/ì§±êµ¬ì•¼êµ¬5.png", 4, scene2, piece1_posX2 + piece_size2, piece1_posY2 - piece_size2},
+		{"Images/ì§±êµ¬ì•¼êµ¬6.png", 5, scene2, piece1_posX2 + piece_size2 * 2, piece1_posY2 - piece_size2},
+		{"Images/ì§±êµ¬ì•¼êµ¬7.png", 6, scene2, piece1_posX2, piece1_posY2 - piece_size2 * 2},
+		{"Images/ì§±êµ¬ì•¼êµ¬8.png", 7, scene2, piece1_posX2 + piece_size2, piece1_posY2 - piece_size2 * 2},
+		{"Images/ì§±êµ¬ì•¼êµ¬9.png", 8, scene2, piece1_posX2 + piece_size2 * 2, piece1_posY2 - piece_size2 * 2},
 	};
 
 	auto gamestart = Object::create("Images/gamestart.png", front, 565, 45);
 	auto select1 = Object::create("Images/select.png", home, 183, 120);
 	auto select2 = Object::create("Images/select.png", home, 950, 120);
 
-	auto completePuzzle = Object::create("Images/Â¯±¸¹è°æ.png", scene, 0, 0);
-	auto completePuzzle2 = Object::create("Images/Â¯±¸¾ß±¸¹è°æ.png", scene2, 0, 0);
+	auto completePuzzle = Object::create("Images/ì§±êµ¬ë°°ê²½.png", scene, 0, 0);
+	auto completePuzzle2 = Object::create("Images/ì§±êµ¬ì•¼êµ¬ë°°ê²½.png", scene2, 0, 0);
 
-	auto fail = Object::create("Images/½ÇÆÐ.png", scene, 0, 0, false);
-	auto fail2 = Object::create("Images/½ÇÆÐ2.png", scene2, 0, 0, false);
+	auto fail = Object::create("Images/ì‹¤íŒ¨.png", scene, 0, 0, false);
+	auto fail2 = Object::create("Images/ì‹¤íŒ¨2.png", scene2, 0, 0, false);
 
 	auto start = Object::create("Images/start.png", scene, 550, 100);
 	auto start2 = Object::create("Images/start.png", scene2, 550, 100);
@@ -425,6 +425,14 @@ int main()
 
 	end2->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
 		endGame();
+		return true;
+		});
+	
+
+	piece[0].piece->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
+		clickMove(piece[0], piece[empty_piece], one_line);
+		CheckPuzzle(piece, num_piece, timer, completePuzzle, shuffle, start_time, record, recordT);
+
 		return true;
 		});
 
