@@ -9,16 +9,14 @@
 3X3과 4X4, 두 가지 유형의 퍼즐 중 하나를 선택해주세요
 
 # 3 X 3 퍼즐
-![33그림퍼즐](https://user-images.githubusercontent.com/77092257/133408464-f574620b-b196-428b-b059-b40bbbda8c98.png)
+![33그림퍼즐](https://user-images.githubusercontent.com/77092257/134278319-f4096103-c5cb-40b9-978c-c65e9f26b5db.png)
+퍼즐이 잘 풀리지 않을 때는 Shuffle 버튼을 눌러 다시 섞어보아요!
 
 # 4 X 4 퍼즐
-![44그림퍼즐](https://user-images.githubusercontent.com/77092257/133408471-da5128ae-eb9c-4303-9f5e-40662dde060d.png)
+![44그림퍼즐](https://user-images.githubusercontent.com/77092257/134278329-3fffe635-6a0d-4e23-9611-4dbd7050ed0f.png)
+화면 상단에서 소요 시간을 확인해보세요!
 
-# 시간 제한
-![퍼즐실패화면](https://user-images.githubusercontent.com/77092257/133408513-e7e8ed7c-f0f3-4a1d-8238-6fb6ad89f038.png)
-시간 제한이 있으니 주의하세요! 시간 내에 풀지 못하면 짱구가 꿀밤을 맞습니다...!
-
-# 기록 확인
-![퍼즐기록화면](https://user-images.githubusercontent.com/77092257/133408502-7602f86c-26a0-4bed-a2c8-48101c20b995.png)
-퍼즐을 완성하고 나의 기록을 확인해보세요!
+# 최고 기록
+![최고기록화면](https://user-images.githubusercontent.com/77092257/134278573-c78e4111-cd48-428b-92e5-66f278016dec.png)
+더 빠르게! 기록을 경신해보아요!
 
